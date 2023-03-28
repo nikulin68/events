@@ -9,13 +9,13 @@ export default function userClick(timerId) {
 
   for (const playingItem of playingItemsCollection) {
     playingItem.addEventListener('click', (e) => {
-      console.log(e.target.className);
+      // console.log(e.target.className);
 
       if (e.target.className === 'playing-area__img') {
         userPoints.textContent = +userPoints.textContent + 1;
       } else {
         userFailPoints++;
-        console.log(userFailPoints);
+        // console.log(userFailPoints);
         if (userFailPoints >= 5) {
           endGame();
           clearTimeout(timerId);
