@@ -1,11 +1,10 @@
-// TODO: write code here
+import PlayingArea from '../components/playing-area/playing-area';
+import userClick from '../components/user-click/user-click';
 
-import Game from './Game';
-import IndexGoblin from './IndexGoblin';
+document.addEventListener('DOMContentLoaded', () => {
+  const playingArea = new PlayingArea(document.querySelector('.playing-area'));
 
-const gamesBoard = new Game();
-gamesBoard.createBoard(16);
+  const randomMovingGoblinTimerId = setInterval(playingArea.randomMovingGoblin, 1000);
 
-const indGob = new IndexGoblin();
-indGob.renderApp();
-indGob.gameClick();
+  userClick(randomMovingGoblinTimerId);
+});
