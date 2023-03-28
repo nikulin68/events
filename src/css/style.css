@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #board {
+    display: flex;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(81, 79, 83);
+    flex-wrap: wrap;
+  }
+  
+  .game-cell {
+    width: 125px;
+    height: 125px;
+    border: 2px solid white;
+    border-radius: 100%;
+  }
+  
+  .image {
+    background-image: url('../img/goblin.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .cursor {
+    cursor: url('../img/molot.png'), pointer;
+  }
+  
+  .points {
+    width: 500px;
+    color: rgb(93, 11, 109);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .result{
+    width: 500px;
+    color: rgb(216, 60, 25);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+  .resultWin{
+    width: 500px;
+    color: rgba(10, 182, 62, 0.801);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
